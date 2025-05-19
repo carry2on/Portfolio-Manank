@@ -8,12 +8,12 @@ import EducationSection from "./Components/EducationSection/EducationSection";
 
 function App() {
   return (
-    <div className="bg-[#171d32] h-auto w-full overflow-hidden">
-      <Navbar className="opacity-0 animate-fade-in" />
-      <Home className="opacity-0 animate-fade-in" />
-      <EducationSection className="opacity-0 animate-fade-in"/>
-      <About className="opacity-0 animate-fade-in" />
-      <Experience className="opacity-0 animate-fade-in" />
+    <div>
+      <Navbar  />
+      <Home  />
+      <EducationSection />
+      <About  />
+      <Experience  />
  <Projects/>
 
       <Footer />
