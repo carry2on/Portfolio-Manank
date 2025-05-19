@@ -24,7 +24,7 @@ const Projects = () => {
         />
         <ProjectCard
         sourceLink={"https://github.com/carry2on/TaskVista"}
-
+demoLink={"https://v0-make-preview.vercel.app/"}
         imgSrc={Img3}
           title="Netflix Clone"
           main="this is a blogging website created this ijsdjf l in next js and used some component library used some component library"
