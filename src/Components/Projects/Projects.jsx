@@ -17,7 +17,7 @@ const Projects = () => {
           main="this is a clone of the music player web apk created in simple HTML,CSS,JS"
         />
         <ProjectCard
-        sourceLink={"https://github.com/carry2on/yogaweb"}
+           sourceLink={"https://github.com/carry2on/yogaweb"}
          imgSrc={Img2}
           title="Youtue Clone"
           main="this is a bloggin website created in next js and used some component library used some component library"
