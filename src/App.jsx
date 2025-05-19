@@ -7,7 +7,7 @@ import Projects from "./Components/Projects/Projects";
 import EducationSection from "./Components/EducationSection/EducationSection";
 
 function App() {
-  return (
+   return (
     <div>
       <Navbar  />
       <Home  />

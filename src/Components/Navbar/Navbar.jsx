@@ -5,7 +5,7 @@ const Navbar = () => {
   const [menu, openMenu] = useState(false);
   const [showMenu, setShowmenu] = useState(true);
   return (
-    <nav className=" bg-[#404F8B] flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
+    <nav className=" bg-[#404F8B] flex flex-wrap justify-between md:items-center text-white px-10 md:px-20">
       <div className="w-24 h-24" >
         <img src={Logo} alt="" srcset="" /></div>
       
