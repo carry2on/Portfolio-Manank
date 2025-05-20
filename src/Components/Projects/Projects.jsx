@@ -19,22 +19,26 @@ const Projects = () => {
         <ProjectCard
            sourceLink={"https://github.com/carry2on/yogaweb"}
          imgSrc={Img2}
-          title="Youtue Clone"
-          main="this is a bloggin website created in next js and used some component library used some component library"
+          title="Yoga Web"
+          main=" created virtual yoga website for PANDEMIC situations to reach out the people and 
+allowing  them continuous practice, and also for the business perspectives profit should be continued."
         />
         <ProjectCard
         sourceLink={"https://github.com/carry2on/TaskVista"}
 demoLink={"https://v0-make-preview.vercel.app/"}
         imgSrc={Img3}
-          title="Netflix Clone"
-          main="this is a blogging website created this ijsdjf l in next js and used some component library used some component library"
+          title="Task Vista"
+          main="Built a role-based task management app using React.js and Tailwind CSS, enabling 
+an admin to assign tasks to employees and manage task status using local state without any 
+backend"
         />
          <ProjectCard
 sourceLink={"https://github.com/carry2on/stydyweb"}
         imgSrc={Img4}
 
-          title="Netflix Clone"
-          main="this is a blogging website created this ijsdjf l in next js and used some component library used some component library"
+          title="Student portal"
+          main=" created a strong site to access for study materials, especially during last-minute 
+emendation. The platform provides comprehensive videos and materials."
         />
 
 
