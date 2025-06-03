@@ -3,6 +3,18 @@ import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { SiRedis, SiMongodb } from "react-icons/si";
 
 const Experience = () => {
+  // Function to handle certificate download
+  const handleCertificateDownload = () => {
+    // Create a temporary link and trigger download
+    const link = document.createElement('a');
+    link.href = '/certificate.pdf'; // Path to PDF in public folder
+    link.download = 'certificate.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div id="Experience" className="p-6 md:p-24">
       <h1 className="text-2xl md:text-4xl text-white font-bold mb-10">Experience</h1>
@@ -52,14 +64,12 @@ const Experience = () => {
               </ul>
 
               <div className="mt-5">
-              <a
-  href="/certificate.pdf" // Path to your PDF file
-  target="_blank"         // Opens in a new tab
-  rel="noopener noreferrer" // Security best practice
-  className="inline-block text-base md:text-lg px-6 py-3 border-2 rounded-xl border-blue-50 bg-slate-600 hover:bg-slate-700 transition"
->
-  Completion Certificate
-</a>
+                <button
+                  onClick={handleCertificateDownload}
+                  className="inline-block text-base md:text-lg px-6 py-3 border-2 rounded-xl border-blue-50 bg-slate-600 hover:bg-slate-700 transition cursor-pointer"
+                >
+                  Completion Certificate
+                </button>
               </div>
             </div>
           </div>

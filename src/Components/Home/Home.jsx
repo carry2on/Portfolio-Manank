@@ -5,26 +5,14 @@ import TextChange from "../TextChange";
 const Home = () => {
   // Function to handle resume download
   const handleResumeDownload = () => {
-    try {
-      // For files in public folder
-      const resumePath = '/Resume.pdf';
-      
-      // Create a temporary link and trigger download
-      const link = document.createElement('a');
-      link.href = resumePath;
-      link.download = 'Manan_Resume.pdf'; // Custom download name
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      
-      // Append to body, click, and remove
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (error) {
-      console.error('Error downloading resume:', error);
-      // Fallback: open in new tab
-      window.open('/Resume.pdf', '_blank');
-    }
+    // Create a temporary link and trigger download
+    const link = document.createElement('a');
+    link.href = '/Manan_Resume.pdf'; // Path to PDF in public folder
+    link.download = 'Manan_Resume.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
