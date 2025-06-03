@@ -3,6 +3,30 @@ import Avtarimage from "../../assets/bg.png";
 import TextChange from "../TextChange";
 
 const Home = () => {
+  // Function to handle resume download
+  const handleResumeDownload = () => {
+    try {
+      // For files in public folder
+      const resumePath = '/Resume.pdf';
+      
+      // Create a temporary link and trigger download
+      const link = document.createElement('a');
+      link.href = resumePath;
+      link.download = 'Manan_Resume.pdf'; // Custom download name
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      
+      // Append to body, click, and remove
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading resume:', error);
+      // Fallback: open in new tab
+      window.open('/Resume.pdf', '_blank');
+    }
+  };
+
   return (
     <div className="text-white flex flex-col md:flex-row w-full justify-between items-center md:items-start p-4 md:p-10 lg:p-20">
       <div className="w-full md:w-2/4 md:pt-10 mb-8 md:mb-0">
@@ -13,17 +37,15 @@ const Home = () => {
           a passionate and dedicated Computer Engineering student with a strong interest in web development and emerging technologies. I thrive on turning creative ideas into real-world digital experiences through clean, efficient, and responsive code.
         </p>
         <div className="mt-6 md:mt-8 lg:mt-10 flex flex-wrap gap-4">
-          <a
-            href="/Resume.pdf"
-            target="main"
-            rel="noopener noreferrer"
-            className="inline-block px-4 md:px-6 py-2 md:py-3 bg-[#080c74] text-white text-base md:text-lg border-2 border-white rounded hover:bg-[#9c97f1] transition-colors duration-300"
+          <button
+            onClick={handleResumeDownload}
+            className="inline-block px-4 md:px-6 py-2 md:py-3 bg-[#080c74] text-white text-base md:text-lg border-2 border-white rounded hover:bg-[#9c97f1] transition-colors duration-300 cursor-pointer"
           >
             Download Resume
-          </a>
+          </button>
           <a
             href="https://github.com/carry2on"
-            target="main"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-4 md:px-6 py-2 md:py-3 bg-[#080c74] text-white text-base md:text-lg border-2 border-white rounded hover:bg-[#9c97f1] transition-colors duration-300"
           >
