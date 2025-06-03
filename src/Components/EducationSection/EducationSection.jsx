@@ -33,7 +33,7 @@ const EducationSection = () => {
   }
 
   return (
-    <section className="  w-full py-122" id="education">
+    <section className="  w-full py-122 mb-9" id="education">
       <div className=" border-none rounded-xl  bg-[#101423] container mx-auto px-4">
         <h2 className="text-3xl font-bold text-white mb-8 border-b border-gray-700 pb-4">Education 🧑‍🎓</h2>
 
