@@ -14,7 +14,7 @@ const EducationSection = () => {
       board: "State Board",
     },
     hscMarks: {
-      school: "Taxshila Science Vidyalay,Prantij",
+      school: " Taxshila Science Vidyalay,Prantij",
       percentage: "78%",
       year: "2022",
       stream: "Science",
@@ -74,25 +74,25 @@ const EducationSection = () => {
             </div>
           </div>
 
-          {/* HSC Marks */}
-          <div className=" bg-[#101423]  p-5 rounded-lg">
-            <h3 className="text-xl font-semibold text-white">HSC (12th Standard)</h3>
-            <div className="mt-2 text-gray-300">
-              <p>
-                <span className="text-blue-400">College:</span> {educationData.hscMarks.college}
-              </p>
-              <p>
-                <span className="text-blue-400">Stream:</span> {educationData.hscMarks.stream}
-              </p>
-              <p>
-                <span className="text-blue-400">Year:</span> {educationData.hscMarks.year}
-              </p>
-              <p>
-                <span className="text-blue-400 font-medium">Percentage:</span>{" "}
-                <span className="text-white font-medium">{educationData.hscMarks.percentage}</span>
-              </p>
-            </div>
-          </div>
+        {/* HSC Marks */}
+<div className=" bg-[#101423]  p-5 rounded-lg">
+  <h3 className="text-xl font-semibold text-white">HSC (12th Standard)</h3>
+  <div className="mt-2 text-gray-300">
+    <p>
+      <span className="text-blue-400">School:</span> {educationData.hscMarks.school}
+    </p>
+    <p>
+      <span className="text-blue-400">Stream:</span> {educationData.hscMarks.stream}
+    </p>
+    <p>
+      <span className="text-blue-400">Year:</span> {educationData.hscMarks.year}
+    </p>
+    <p>
+      <span className="text-blue-400 font-medium">Percentage:</span>{" "}
+      <span className="text-white font-medium">{educationData.hscMarks.percentage}</span>
+    </p>
+  </div>
+</div>
 
           {/* Current College */}
           <div className=" bg-[#101423]  p-5 rounded-lg">
