@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImg from "../../assets/photo-C8q0KQHG.webp";
+// import bannerImg from "../../assets/photo-C8q0KQHG.webp";
 
 const ProjectCard = ({ title, main,imgSrc,demoLink, sourceLink}) => {
   return (
