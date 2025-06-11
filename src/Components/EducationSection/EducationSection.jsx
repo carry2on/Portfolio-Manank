@@ -27,7 +27,7 @@ const EducationSection = () => {
     },
     careerStatus: {
       lookingFor: "Internship",
-      interests: "Web Development, UI/UX Design, Software Development",
+      interests: "Web Development, Software Development, MERN Stack Development, Data Science, Data Analysis",
       availability: "Available for Summer 2024",
     },
   }
@@ -115,7 +115,7 @@ const EducationSection = () => {
           </div>
 
           {/* Career Status */}
-          <div className=" bg-[#101423]  p-5 rounded-lg border-l-4 border-blue-500">
+          <div className=" bg-[#101423]  p-5 rounded-lg">
             <h3 className="text-xl font-semibold text-white">Career Status</h3>
             <div className="mt-2 text-gray-300">
               <p>
