@@ -22,13 +22,13 @@ const EducationSection = () => {
     currentCollege: {
       name: "Silver Oak University Engineering College",
       course: "B.Tech in Computer Engineering",
-      currentYear: "3rd Year",
-      cgpa: "8.5/10",
+      currentYear: "4th Year",
+      cgpa: "8.88/10",
     },
     careerStatus: {
       lookingFor: "Internship",
       interests: "Web Development, Software Development, MERN Stack Development, Data Science, Data Analysis",
-      availability: "Available for Summer 2024",
+      availability: "Just looking for internship opportunities",
     },
   }
 
