@@ -3,7 +3,8 @@ import ProjectCard from "./ProjectCard";
 import Img1 from "./image1.png";
 import Img2 from "./image2.png";
 import Img3 from "./image3.png";
-import Img4 from "./image4.png"
+import Img4 from "./image4.png";
+import Img5 from "./image5.png"
 const Projects = () => {
   return (
     <div id="Projects" className="p-10 md:p-24 text-white ">
@@ -40,6 +41,16 @@ demoLink={"https://vocal-cranachan-b7f939.netlify.app/home"}
           title="Student portal"
           main=" created a strong site to access for study materials, especially during last-minute 
 emendation. The platform provides comprehensive videos and materials."
+        />
+
+
+          <ProjectCard
+sourceLink={"https://github.com/carry2on/Image-Enhancer"}
+        imgSrc={Img5}
+        
+demoLink={"https://image-enhancer-cyan.vercel.app/"}
+          title="Image Enhanver"
+          main=" In this project, I developed a sleek and functional AI-based Image Enhancer using React. The tool allows users to effortlessly upload an image and enhance it using artificial intelligence. It improves image clarity, sharpness, and resolution, making photos look more detailed and high-quality."
         />
 
 
