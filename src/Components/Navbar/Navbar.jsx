@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu2Line } from "@remixicon/react";
-import Logo from "../../assets/LOgo.png"
+import Logo from "../../assets/LOgo.jpg"
 
 const Navbar = () => {
   const [menu, openMenu] = useState(false);
